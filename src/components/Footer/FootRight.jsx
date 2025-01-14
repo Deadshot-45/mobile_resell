@@ -22,16 +22,16 @@ const FootRight = () => {
     },
   ];
   return (
-    <div className="flex flex-col justify-around p-10">
+    <div className="flex flex-col justify-evenly p-3 w-1/2 overflow-hidden md:gap-5">
   {footer.map(({ id, text1, text2, icon }) => (
     <Fragment key={id}>
-      <div className="flex gap-6">
-        <div className="bg-green-800 w-16 flex justify-center items-center rounded-t-2xl rounded-bl-2xl">
-          <i className={`fa-solid ${icon} text-2xl font-bold m-4`}></i>
+      <div className="flex gap-3 md:pl-10">
+        <div className="bg-green-800  flex justify-center items-center rounded-t-2xl rounded-bl-2xl">
+          <i className={`fa-solid ${icon} text-xs font-bold m-3 md:text-[18px]`}></i>
         </div>
-        <div className="flex flex-col gap-2">
-          <p>{text1}</p>
-          <p>{text2}</p>
+        <div className="flex flex-col gap-2 justify-center">
+          <p className="text-[8px] md:text-xs">{text1}</p>
+          <p className="text-[8px] md:text-xs">{text2}</p>
         </div>
       </div>
     </Fragment>

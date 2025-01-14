@@ -7,7 +7,7 @@ const Features = () => {
   };
   return (
     <div
-      className="w-full flex gap-16 px-10 py-20"
+      className="w-full flex gap-6 px-5 py-10"
       style={{ backgroundColor: style.backgroundColor }}
     >
       {" "}
